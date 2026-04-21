@@ -39,7 +39,6 @@ function CountUp({ end, suffix = "" }) {
 }
 
 export default function Landing() {
-  const [submitted, setSubmitted] = useState(false);
   const WHATSAPP_LINK = "https://wa.me/27707473563?text=Hi"; // Replace with real number
 
   const Sec = ({ children, style = {} }) => (
@@ -71,7 +70,7 @@ export default function Landing() {
             <span style={{ fontSize: 24 }}>📚</span>
             <span style={{ fontFamily: "'Fraunces',serif", fontSize: 22, fontWeight: 800, background: `linear-gradient(135deg,${C.green},${C.gold})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Fundani</span>
           </div>
-          <a href={WHATSAPP_LINK} target="_blank" rel="noopener" className="cta" style={{
+          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="cta" style={{
             background: C.whatsapp, color: "#fff", border: "none", borderRadius: 24, padding: "10px 20px",
             fontSize: 14, fontWeight: 700, cursor: "pointer", transition: "all 0.3s", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 6
           }}>💬 Start Free on WhatsApp</a>
@@ -102,7 +101,7 @@ export default function Landing() {
                 </p>
               </FadeIn>
               <FadeIn delay={0.3}>
-                <a href={WHATSAPP_LINK} target="_blank" rel="noopener" className="cta" style={{
+                <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="cta" style={{
                   background: `linear-gradient(135deg,${C.whatsapp},${C.greenDark})`, color: "#fff", borderRadius: 14,
                   padding: "16px 32px", fontSize: 17, fontWeight: 700, cursor: "pointer", transition: "all 0.3s",
                   textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 10, border: "none"
@@ -248,7 +247,7 @@ export default function Landing() {
               <p style={{ color: C.muted, fontSize: 15, marginBottom: 28, maxWidth: 440, margin: "0 auto 28px" }}>
                 It takes 30 seconds. Open WhatsApp, send "Hi", and Fundani takes it from there. No signup, no payment, no catch.
               </p>
-              <a href={WHATSAPP_LINK} target="_blank" rel="noopener" className="cta" style={{
+              <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="cta" style={{
                 background: `linear-gradient(135deg,${C.whatsapp},${C.greenDark})`, color: "#fff", borderRadius: 14,
                 padding: "18px 36px", fontSize: 18, fontWeight: 700, cursor: "pointer", transition: "all 0.3s",
                 textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 10, border: "none"
